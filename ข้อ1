@@ -1,0 +1,20 @@
+# รับอินพุตจากผู้ใช้
+hour = int(input("ชั่วโมง: "))
+minute = int(input("นาที: "))
+
+# ตรวจสอบว่ามีค่าติดลบหรือไม่
+if hour < 0 or minute < 0:
+    print("โปรดใส่ข้อมูลที่ไม่ติดลบ")
+else:
+    # คำนวณจำนวนชั่วโมงทั้งหมด (รวมเศษนาที)
+    total_hours = hour
+    if minute > 0:
+        total_hours += 1
+
+    # ชั่วโมงแรกจอดฟรี
+    if total_hours <= 1:
+        fee = 0
+    else:
+        fee = (total_hours - 1) * 30
+
+    print("ค่าจอดรถ:", fee, "บาท")
