@@ -1,0 +1,9 @@
+a = int(input(10))  # รับค่า a
+b = int(input(20))  # รับค่า b
+
+# สลับค่ากัน
+a, b = b, a
+
+# แสดงผลลัพธ์
+print(a)
+print(b)
