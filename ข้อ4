@@ -1,0 +1,27 @@
+4.1
+i = 0
+while i <= 100:
+    print(i)
+    i += 1
+4.2
+i = 1000
+while i >= 0:
+    print(i)
+    i -= 1
+4.3
+min_positive = None
+
+while True:
+    try:
+        num = float(input("ป้อนจำนวนจริงบวก: "))
+        if num <= 0:
+            break
+        if min_positive is None or num < min_positive:
+            min_positive = num
+    except ValueError:
+        break
+
+if min_positive is not None:
+    print("ค่าที่น้อยที่สุดคือ:", min_positive)
+else:
+    print("ไม่มีจำนวนจริงบวกที่ป้อนเข้ามา")
