@@ -1,0 +1,5 @@
+m = int(input(74))  # รับค่า m
+n = int(input(24))  # รับค่า n
+
+result = m - n    # คำนวณผลลบของ m และ n
+print(result)     # แสดงผลลัพธ์
